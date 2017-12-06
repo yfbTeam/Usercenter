@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>首页</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="menu menua">	
+			<ul>
+				<li>
+					<h1><i class="iconfont iconfonta">&#xe65c;</i>圣邦天麒(230人)</h1>
+					<ul>
+						<li>
+							<h1>销售一部</h1>
+						</li>
+						<li>
+							<h1>销售二部</h1>
+						</li>
+						<li>
+							<h1>销售三部</h1>
+						</li>
+						<li>
+							<h1>研发部</h1>
+							<ul>
+								<li>
+									<h1>三级导航</h1>
+								</li>
+								<li>
+									<h1>三级导航</h1>
+								</li>
+								<li>
+									<h1>三级导航</h1>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1><i class="iconfont iconfonta">&#xe65c;</i>圣邦天麒(230人)</h1>
+					<ul>
+						<li>
+							<h1>销售一部</h1>
+						</li>
+						<li>
+							<h1>销售二部</h1>
+						</li>
+						<li>
+							<h1>销售三部</h1>
+						</li>
+						<li>
+							<h1>研发部</h1>
+							<ul>
+								<li>
+									<h1>三级导航</h1>
+								</li>
+								<li>
+									<h1>三级导航</h1>
+								</li>
+								<li>
+									<h1>三级导航</h1>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			(function menu(){
+	        	$('.menu').find('li:has(ul)').children('h1').click(function(){
+           			var $next = $(this).next('ul');
+           			if($next.is(':hidden')){
+	                    $(this).parent().siblings().children().removeClass('selected');
+	                    $(this).addClass('selected');
+	                    $next.stop().slideDown();
+	                    if($(this).parent('li').siblings('li').children('ul').is(':visible')){
+	                        $(this).parent("li").siblings("li").find("h1").removeClass('selected');
+	                        $(this).parent("li").siblings("li").find("ul").slideUp();
+	                    }
+	                }else{
+	                    $(this).removeClass('selected');
+	                    $next.stop().slideUp();
+	                    $(this).next("ul").children("li").find("ul").slideUp();
+	                    $(this).next("ul").children("li").find("h1").removeClass('selected');
+	                    $('.menu ul li').removeClass('active');
+	                }
+           		})
+	        })();
+		</script>
+	</body>
+</html>

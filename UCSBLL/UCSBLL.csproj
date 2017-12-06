@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{705C31FD-79BE-4534-8DAD-DC5CEBF5EFCC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCSBLL</RootNamespace>
+    <AssemblyName>UCSBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BLLCommon.cs" />
+    <Compile Include="BLLTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BLLTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="Partial\Org_MechanismService.cs" />
+    <Compile Include="Partial\Sys_ClassInfoService.cs" />
+    <Compile Include="Partial\Sys_DictionaryService.cs" />
+    <Compile Include="Partial\Sys_GradeInfoService.cs" />
+    <Compile Include="Partial\Sys_LogInfoService.cs" />
+    <Compile Include="Partial\Sys_MenuInfoService.cs" />
+    <Compile Include="Partial\Sys_RoleService.cs" />
+    <Compile Include="Partial\Sys_StudySectionService.cs" />
+    <Compile Include="Partial\Sys_SystemInfoService.cs" />
+    <Compile Include="Partial\Sys_UserInfoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BLLTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BLLTemplate.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UCSDAL\UCSDAL.csproj">
+      <Project>{3b0eb470-ba2a-4b1e-9fb8-b29c14d77abd}</Project>
+      <Name>UCSDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UCSIBLL\UCSIBLL.csproj">
+      <Project>{92a505ee-1e3b-4d7d-8ace-f83a710bc58d}</Project>
+      <Name>UCSIBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UCSIDAL\UCSIDAL.csproj">
+      <Project>{64600633-1a7d-44dc-b085-2ab46840aa01}</Project>
+      <Name>UCSIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UCSModel\UCSModel.csproj">
+      <Project>{8af0e321-088a-4697-b717-3a5b8a75e935}</Project>
+      <Name>UCSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UCSUtility\UCSUtility.csproj">
+      <Project>{32285312-1c10-430a-aada-9246b992780a}</Project>
+      <Name>UCSUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

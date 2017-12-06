@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSIBLL", "UCSIBLL\UCSIBLL.csproj", "{92A505EE-1E3B-4D7D-8ACE-F83A710BC58D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSIDAL", "UCSIDAL\UCSIDAL.csproj", "{64600633-1A7D-44DC-B085-2AB46840AA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSBLL", "UCSBLL\UCSBLL.csproj", "{705C31FD-79BE-4534-8DAD-DC5CEBF5EFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSDAL", "UCSDAL\UCSDAL.csproj", "{3B0EB470-BA2A-4B1E-9FB8-B29C14D77ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSModel", "UCSModel\UCSModel.csproj", "{8AF0E321-088A-4697-B717-3A5B8A75E935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSUtility", "UCSUtility\UCSUtility.csproj", "{32285312-1C10-430A-AADA-9246B992780A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSWeb", "UCSWeb\UCSWeb.csproj", "{F708A051-C382-4ACC-AFEF-D8E06EEE26CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSHandler", "UCSHandler\UCSHandler.csproj", "{BEB11AF6-91E4-4727-814A-A3E0726E339F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.211:8080/tfs/%E7%BB%9F%E4%B8%80%E8%AE%A4%E8%AF%81%E4%B8%AD%E5%BF%83
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UCSBLL\\UCSBLL.csproj
+		SccProjectName1 = UCSBLL
+		SccLocalPath1 = UCSBLL
+		SccProjectUniqueName2 = UCSDAL\\UCSDAL.csproj
+		SccProjectName2 = UCSDAL
+		SccLocalPath2 = UCSDAL
+		SccProjectUniqueName3 = UCSHandler\\UCSHandler.csproj
+		SccProjectName3 = UCSHandler
+		SccLocalPath3 = UCSHandler
+		SccProjectUniqueName4 = UCSIBLL\\UCSIBLL.csproj
+		SccProjectName4 = UCSIBLL
+		SccLocalPath4 = UCSIBLL
+		SccProjectUniqueName5 = UCSIDAL\\UCSIDAL.csproj
+		SccProjectName5 = UCSIDAL
+		SccLocalPath5 = UCSIDAL
+		SccProjectUniqueName6 = UCSModel\\UCSModel.csproj
+		SccProjectName6 = UCSModel
+		SccLocalPath6 = UCSModel
+		SccProjectUniqueName7 = UCSUtility\\UCSUtility.csproj
+		SccProjectName7 = UCSUtility
+		SccLocalPath7 = UCSUtility
+		SccProjectUniqueName8 = UCSWeb\\UCSWeb.csproj
+		SccProjectName8 = UCSWeb
+		SccLocalPath8 = UCSWeb
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92A505EE-1E3B-4D7D-8ACE-F83A710BC58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A505EE-1E3B-4D7D-8ACE-F83A710BC58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A505EE-1E3B-4D7D-8ACE-F83A710BC58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A505EE-1E3B-4D7D-8ACE-F83A710BC58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64600633-1A7D-44DC-B085-2AB46840AA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64600633-1A7D-44DC-B085-2AB46840AA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64600633-1A7D-44DC-B085-2AB46840AA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64600633-1A7D-44DC-B085-2AB46840AA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705C31FD-79BE-4534-8DAD-DC5CEBF5EFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705C31FD-79BE-4534-8DAD-DC5CEBF5EFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705C31FD-79BE-4534-8DAD-DC5CEBF5EFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705C31FD-79BE-4534-8DAD-DC5CEBF5EFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0EB470-BA2A-4B1E-9FB8-B29C14D77ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0EB470-BA2A-4B1E-9FB8-B29C14D77ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0EB470-BA2A-4B1E-9FB8-B29C14D77ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0EB470-BA2A-4B1E-9FB8-B29C14D77ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF0E321-088A-4697-B717-3A5B8A75E935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF0E321-088A-4697-B717-3A5B8A75E935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF0E321-088A-4697-B717-3A5B8A75E935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF0E321-088A-4697-B717-3A5B8A75E935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32285312-1C10-430A-AADA-9246B992780A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32285312-1C10-430A-AADA-9246B992780A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32285312-1C10-430A-AADA-9246B992780A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32285312-1C10-430A-AADA-9246B992780A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F708A051-C382-4ACC-AFEF-D8E06EEE26CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F708A051-C382-4ACC-AFEF-D8E06EEE26CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F708A051-C382-4ACC-AFEF-D8E06EEE26CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F708A051-C382-4ACC-AFEF-D8E06EEE26CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB11AF6-91E4-4727-814A-A3E0726E339F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB11AF6-91E4-4727-814A-A3E0726E339F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB11AF6-91E4-4727-814A-A3E0726E339F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB11AF6-91E4-4727-814A-A3E0726E339F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
